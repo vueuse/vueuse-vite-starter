@@ -37,8 +37,6 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
-
 html, body, h1, h2, h3, p {
   font-family: 'Noto Serif', serif;
   user-select: none;
