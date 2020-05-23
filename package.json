@@ -1,0 +1,18 @@
+{
+  "name": "vite-vueuse-starter",
+  "version": "0.0.0",
+  "dependencies": {
+    "@vueuse/core": "^3.0.28",
+    "vue": "next"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
+    "typescript": "^3.9.3",
+    "vite": "^0.16.9"
+  },
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite"
+  }
+}
