@@ -2,7 +2,7 @@
   "name": "vite-vueuse-starter",
   "version": "0.0.0",
   "dependencies": {
-    "@vueuse/core": "^3.0.28",
+    "@vueuse/core": "4.0.0-alpha.0",
     "vue": "next"
   },
   "devDependencies": {
