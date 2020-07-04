@@ -13,6 +13,8 @@ Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/
 
 ## Installation
 
+> 💡 If you want to install by your own. Please don't forget to install with <code>@vueuse/core<b>@vue3</b></code>
+
 1. Clone this repository
 2. `yarn`
 3. `yarn dev`
