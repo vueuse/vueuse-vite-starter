@@ -1,4 +1,4 @@
-<h1 align='center'>⚡️ Vite VueUse Starter</h1>
+<h1 align='center'>⚡️ VueUse Vite Starter</h1>
 
 <p align='center'>
 <img src='./src/logo.svg' height='120'/>
@@ -16,7 +16,11 @@ Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/
 1. Clone this repository
 2. `yarn`
 3. `yarn dev`
-4.  open http://localhost:3000 in your browser
+4. open http://localhost:3000 in your browser
+
+## More Example
+
+Enjoy using Vite and VueUse? Check out the real-app template [Vitesse](https://github.com/antfu/vitesse)!
 
 ## License
 

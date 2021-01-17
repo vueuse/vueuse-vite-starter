@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "incremental": true,
     "target": "esnext",
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "incremental": true,
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
   },
   "exclude": ["node_modules", "dist"]

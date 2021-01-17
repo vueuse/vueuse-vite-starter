@@ -10,30 +10,17 @@
       <a @click='dec()'>-</a>
     </h3>
 
-    <br/><br/>
+    <br><br>
     <p><a href='https://github.com/antfu/vite-vueuse-starter' target='__blank'>Source</a></p>
     <p><a href='https://vueuse-next-example.netlify.app/' target='__blank'>Webpack Example</a></p>
   </div>
 </template>
 
-<script>
-import { ref } from 'vue'
+<script setup lang="ts">
 import { useMouse, useCounter } from '@vueuse/core'
 
-export default {
-  setup() {
-    const { x, y } = useMouse()
-    const { count, inc, dec } = useCounter()
-
-    return {
-      x, 
-      y,
-      count,
-      inc,
-      dec,
-    }
-  }
-}
+const { x, y } = useMouse()
+const { count, inc, dec } = useCounter()
 </script>
 
 <style scoped>
