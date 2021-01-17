@@ -5,11 +5,11 @@
 </p>
 
 
-Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/antfu/vueuse) + [TypeScript](https://www.typescriptlang.org/)
+Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/vueuse/vueuse) + [TypeScript](https://www.typescriptlang.org/)
 
-🌐 [Live Demo](https://vite-vueuse-starter.netlify.app/)
+🌐 [Live Demo](https://vueuse-vite-starter.netlify.app/)
 
-📦 [Webpack Example](https://github.com/antfu/vueuse-next-example)
+📦 [Webpack Example](https://github.com/vueuse/vueuse-vue3-example)
 
 ## Installation
 
@@ -20,7 +20,7 @@ Starter for [Vite](https://github.com/vuejs/vite) + [VueUse](https://github.com/
 
 ## More Example
 
-Enjoy using Vite and VueUse? Check out the real-app template [Vitesse](https://github.com/antfu/vitesse)!
+Enjoy using Vite and VueUse? Check out the real world template [Vitesse](https://github.com/antfu/vitesse)!
 
 ## License
 
