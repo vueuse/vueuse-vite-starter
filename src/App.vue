@@ -1,41 +1,86 @@
 <template>
-  <div id="app">
+  <div :id="isDark ? 'bg' : 'app'">
     <img src="./logo.svg" />
-    <h1>Hello <a href='https://github.com/vuejs/vite' target='__blank'>Vite</a> and <a href='https://github.com/vueuse/vueuse' target='__blank'>VueUse</a>!</h1>
+    <h1 :class="{ text: isDark }">
+      Hello
+      <a href="https://github.com/vuejs/vite" target="__blank">Vite</a> and
+      <a href="https://github.com/vueuse/vueuse" target="__blank">VueUse</a>!
+    </h1>
 
-    <h3>Mouse: {{x}} x {{y}}</h3>
+    <h3 style="margin: 20px 0">Mouse: {{ x }} x {{ y }}</h3>
     <h3>
-      Counter: {{count}}
-      <a @click='inc()' style='margin-right:10px'>+</a>
-      <a @click='dec()'>-</a>
+      Counter: {{ count }}
+      <a @click="inc()" style="margin-right: 10px">+</a>
+      <a @click="dec()">-</a>
     </h3>
+    <button
+      class="btn"
+      @click="isDark = !isDark"
+      :class="isDark ? 'darkBtn' : 'lightBtn'"
+    >
+      {{ isDark ? "🌞" : "🌝" }}
+    </button>
 
-    <br><br>
-    <p><a href='https://github.com/vueuse/vueuse-vite-starter' target='__blank'>Source</a></p>
-    <p><a href='https://vueuse-vue3-example.netlify.app/' target='__blank'>Webpack Example</a></p>
+    <br /><br />
+    <p>
+      <a href="https://github.com/vueuse/vueuse-vite-starter" target="__blank"
+        >Source</a
+      >
+    </p>
+    <p>
+      <a href="https://vueuse-vue3-example.netlify.app/" target="__blank"
+        >Webpack Example</a
+      >
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useMouse, useCounter } from '@vueuse/core'
+import { useMouse, useCounter, usePreferredDark } from "@vueuse/core";
 
-const { x, y } = useMouse()
-const { count, inc, dec } = useCounter()
+const { x, y } = useMouse();
+const isDark = usePreferredDark();
+const { count, inc, dec } = useCounter();
 </script>
 
 <style scoped>
-html, body, h1, h2, h3, p {
-  font-family: 'Noto Serif', serif;
+html,
+body,
+h1,
+h2,
+h3,
+p {
+  font-family: "Noto Serif", serif;
   user-select: none;
+}
+
+#bg {
+  background-color: #36454f;
+  color: white;
+  height: 100vh;
+}
+
+.btn {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  margin-top: 20px;
 }
 
 #app {
   text-align: center;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0, 0, 0, 0.4);
+  background-color: white;
 }
+
 img {
   width: 500px;
 }
+
 a {
   color: #41b883;
   text-decoration: none;
