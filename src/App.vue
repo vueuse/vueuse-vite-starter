@@ -1,7 +1,7 @@
 <template>
   <div :id="isDark ? 'bg' : 'app'">
     <img src="./logo.svg" />
-    <h1 :class="{ text: isDark }">
+    <h1>
       Hello
       <a href="https://github.com/vuejs/vite" target="__blank">Vite</a> and
       <a href="https://github.com/vueuse/vueuse" target="__blank">VueUse</a>!
