@@ -1,9 +1,9 @@
 import { UserConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 
 const config: UserConfig = {
   plugins: [
-    vue()
+    Vue()
   ]
 }
 
