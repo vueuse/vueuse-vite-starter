@@ -3,14 +3,14 @@
     "build": "vite build",
     "dev": "vite"
   },
+  "type": "module",
   "dependencies": {
-    "@vueuse/core": "^8.2.0",
-    "vue": "^3.2.31"
+    "@vueuse/core": "^10.7.0",
+    "vue": "^3.3.11"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.4",
-    "@vue/compiler-sfc": "^3.2.31",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.16"
+    "@vitejs/plugin-vue": "^4.5.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.9"
   }
 }
